@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Textile | Products</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <style>
+        .show {
+            display: block;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(102, 102, 230);
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 left-0 z-20 w-full">
+        <nav class=" p-4 bg-gray-800 text-gray-200  ">
+            <div class="flex justify-between items-center ">
+                <div class="flex items-center pl-8 pt-0">
+                    <img src="/images/Logo/Pawan Textiles.ico" alt="Pawan Textiles">
+                </div>
+                <!-- MOBILE NAV ICON -->
+                <div class="md:hidden block absolute top-4 right-8 pt-5  fixed">
+                    <button aria-label="navigation" type="button"
+                        class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+                            class="fas fa-bars text-3xl" id="bars"></i> </button>
+                </div>
+
+                <!-- NAVIGATION - LARGE SCREENS -->
+                <div class="hidden md:flex ">
+                    <ul class="hidden md:flex">
+                        <li class="text-lg pr-8 "><a href="/"
+                                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                                style="text-underline-offset: 8px;">Home</a></li>
+                        <li class="text-lg pr-8"><a href="/products.html"
+                                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                                style="text-underline-offset: 8px;">Products</a></li>
+                        <li class="text-lg pr-8"><a href="/About.html"
+                                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                                style="text-underline-offset: 8px;">About us</a></li>
+                        <li class="text-lg pr-8"><a href="/contact.html"
+                                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                                style="text-underline-offset: 8px;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/919323658533" target="_blank"><i
+                            class="fab fa-whatsapp text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+                    <a
+                        href="mailto:pawantextiles.pm@gmail.com?cc=pawanmundhra.pm@gmail.com &bcc=yogeshmundhra.official@gmail.com&subject=Enquiry for New order!&body=Please share the Name / Phone number / cutting / design no. / quality info:  "><i
+                            class="fa fa-envelope text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+                    <a href="tel:+91 9323658533"><i
+                            class="fa fa-phone text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+                    <a href="https://www.google.com/maps/place/Pawan+Textiles/@19.2750285,73.0421622,21z/data=!4m5!3m4!1s0x0:0x26276872de90c02b!8m2!3d19.2751796!4d73.0425798"
+                        target="_blank"><i
+                            class="fa fa-location-arrow text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+                </div>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu" class="hidden flex w-full mx-auto py-8 text-center">
+                <div class="flex flex-col justify-center items-center w-full">
+                    <a href="/"
+                        class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                        style="text-underline-offset: 8px;">Home</a>
+                    <a href="/products.html"
+                        class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                        style="text-underline-offset: 8px;">Products</a>
+                    <a href="/About.html"
+                        class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                        style="text-underline-offset: 8px;">About us</a>
+                    <a href="/contact.html"
+                        class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                        style="text-underline-offset: 8px;">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-indigo-600 text-indigo-200 md:text-center py-2 px-4 ">
+            For any business, Please Contact <a href="https://wa.me/919323658533"  class="font-bold underline hover:text-indigo-100">Pawan
+                Mundhra</a>.
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font" id="products">
+        <div class="container px-5 py-16 mx-auto">
+
+            <!-- Breadcrumbs -->
+            <div class="flex items-center space-x-2 text-gray-400 text-sm ">
+                <a href="/" class="hover:underline hover:text-gray-600">Home</a>
+                <span>
+                    <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </span>
+                <span>Products</span>
+            </div>
+            <!-- ./ Breadcrumbs -->
+
+
+
+            <div class="flex flex-wrap w-full mb-20 pt-10">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                        Products Categories
+                    </h1>
+                    <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+
+                    We offer extensive range of uniforms shirting and suiting fabric in greige (grey) as well as 100% yarn dyed.
+                    These have memorizing
+                    designs and intricate patterns such as stripes (lining), checks, dobby, etc..
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/4000 series/4001.jpg"
+                            alt="Pawan Textiles">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">4000 Series</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Blue and White Stripes</h2>
+                        <p class="leading-relaxed text-base">
+
+                            Discover the perfect fabric for your uniform needs with our best-selling blue and white
+                            striped shirting fabric. Designed for durability and comfort, it's the ideal choice for
+                            school uniform.
+                        </p><br>
+                        <div class="flex items-center flex-wrap pt-1">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                                href="/products/4000Series.html">Product List
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/1100 series/1112.jpg"
+                            alt="Pawan Textiles">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">1100 Series</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Stripes</h2>
+                        <p class="leading-relaxed text-base">Upgrade your fashion game with our stylish 1100 stripe
+                            fabric series, available in a range of colors and patterns. Perfect for creating trendy and
+                            versatile clothing, accessories, and home decor items.</p>
+                        <br>
+                        <div class="flex items-center flex-wrap pt-1">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                                href="/products/1100Series.html">Product List
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/2200 series/11.jpg" alt="Pawan Textiles">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">2200 Series</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Stripes</h2>
+                        <p class="leading-relaxed text-base">Upgrade your style with our high-quality 2200 striped shirting geirge fabric series. With a wide variety of patterns and colors, it's the perfect choice for creating fashionable and versatile shirts.</p><br>
+                        <div class="flex items-center flex-wrap pt-1">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                                href="/products/2200Series.html">Product List
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="/8000 series/8001.jpg"
+                            alt="Pawan Textiles">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8000 Series</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Stripes</h2>
+                        <p class="leading-relaxed text-base">Upgrade your fashion game with our stylish 1100 stripe
+                            fabric series, available in a range of colors and patterns. Perfect for creating trendy and
+                            versatile clothing, accessories, and home decor items.</p>
+                        <br>
+                        <div class="flex items-center flex-wrap pt-1">
+                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                                href="/products/8000Series.html">Product List
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/Fila Fil/Polyster_Fila_Fil.PNG" alt="Pawan Textiles">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">100 Series</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fila Fil</h2>
+                        <p class="leading-relaxed text-base">Introducing our premium Fila Fil fabric, crafted with a
+                            crisp, cool texture and elegant sheen. Perfect for creating high-quality clothing and home
+                            decor items that exude sophistication and style.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <br><br><br><br>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <footer
+        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2011 <a href="https://flowbite.com/"
+                class="hover:underline">Pawan Textiles</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="/products.html" class="mr-4 hover:underline md:mr-6 ">Products</a>
+            </li>
+            <li>
+                <a href="/About.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+            </li>
+            <li>
+                <a href="/contact.html" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+<script>
+    // Gets the Mobile Nav icon by its ID
+    let bars = document.getElementById('bars');
+
+    // Gets the Mobile Nav container
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    // Displays the Mobile Nav when clicked and changes the Nav Icon from three bars to an 'X'
+    bars.addEventListener('click', function () {
+        mobileMenu.classList.toggle('show');
+        bars.classList.toggle('fa-times');
+    });
+
+
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1100 Series</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <style>
+    .show {
+      display: block;
+    }
+
+    #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(102, 102, 230);
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+  </style>
+</head>
+
+<body>
+  <header class="sticky top-0 left-0 z-20 w-full">
+    <nav class=" p-4 bg-gray-800 text-gray-200  ">
+      <div class="flex justify-between items-center ">
+
+        <div class="flex items-center pl-8 pt-0">
+          <img src="/images/Logo/Pawan Textiles.ico">
+        </div>
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-4 right-8 pt-5  fixed">
+          <button aria-label="navigation" type="button"
+            class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+              class="fas fa-bars text-3xl" id="bars"></i> </button>
+        </div>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex ">
+          <ul class="hidden md:flex">
+            <li class="text-lg pr-8 "><a href="/"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Home</a></li>
+            <li class="text-lg pr-8"><a href="/products.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Products</a></li>
+            <li class="text-lg pr-8"><a href="/About.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">About us</a></li>
+            <li class="text-lg pr-8"><a href="/contact.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="hidden md:flex">
+          <a href="https://wa.me/919323658533" target="_blank"><i
+              class="fab fa-whatsapp text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a
+            href="mailto:pawantextiles.pm@gmail.com?cc=pawanmundhra.pm@gmail.com &bcc=yogeshmundhra.official@gmail.com&subject=Enquiry for New order!&body=Please share the Name / Phone number / cutting / design no. / quality info:  "><i
+              class="fa fa-envelope text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a href="tel:+91 9323658533"><i
+              class="fa fa-phone text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a href="https://www.google.com/maps/place/Pawan+Textiles/@19.2750285,73.0421622,21z/data=!4m5!3m4!1s0x0:0x26276872de90c02b!8m2!3d19.2751796!4d73.0425798"
+            target="_blank"><i
+              class="fa fa-location-arrow text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="hidden flex w-full mx-auto py-8 text-center">
+        <div class="flex flex-col justify-center items-center w-full">
+          <a href="/"
+            class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Home</a>
+          <a href="/products.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Products</a>
+          <a href="/About.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">About us</a>
+          <a href="/contact.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-indigo-600 text-indigo-200 md:text-center py-2 px-4 ">
+      For any business, Please Contact <a href="https://wa.me/919323658533" class="font-bold underline hover:text-indigo-100">Pawan
+        Mundhra</a>.
+    </div>
+
+  </header>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-16 mx-auto">
+      <!-- Breadcrumbs -->
+      <div class="flex items-center space-x-2 text-gray-400 text-sm ">
+        <a href="/" class="hover:underline hover:text-gray-600">Home</a>
+        <span>
+          <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+        <a href="/products.html" class="hover:underline hover:text-gray-600">Products</a>
+        <span>
+          <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+        <span>1100 Series</span>
+      </div>
+
+      <!-- ./ Breadcrumbs -->
+      <div class="flex flex-wrap w-full mb-20 pt-10">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Stripes Fabrics..</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">We are one of the leading organization engaged in
+          providing excellent quality Dull Stripes Uniform Shirting Fabrics, which are
+          manufactured by using high grade material. These Striped Uniform Shirting Fabrics are widely appreciated by
+          our clients which are situated all round the nation.
+          With an impressive growth record in this highly
+          competitive industry, we are providing a qualitative range of Striped School Uniform Fabric, which are as
+          follows:
+        </p>
+      </div>
+
+      <div class="bg-white">
+        <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1101.jpg"
+                alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1103</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1102.jpg"
+                alt="Olive drab green insulated bottle with flared screw lid and flat top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1104</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1103.jpg" alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1109</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1104.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1110</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1105.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1111</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1106.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1112</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1107.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1115</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1108.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1119</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1109.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1120</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1110.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1121</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1111.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1122</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1112.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1124</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1113.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1126</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1114.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1129</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1115.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1130</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1116.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1131</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1117.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1133</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1118.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1134</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1119.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1135</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1120.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1138</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1121.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1139</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1122.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1142</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1123.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1144</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1124.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1145</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1125.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1174</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1126.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1175</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1127.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1180</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1128.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1181</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1129.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1186</p>
+          </a>
+
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1130.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1187</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1131.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1188</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1132.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1189</p>
+          </a>
+
+          <a href="#" class="group">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="/1100 series/1133.jpg"
+                alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 text-sm text-gray-700">Stripes</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">1190</p>
+          </a>
+          <!-- More products... -->
+        </div>
+      </div>
+  </section>
+  <br><br><br><br>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  <footer
+    class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2011 <a href="https://flowbite.com/"
+        class="hover:underline">Pawan Textiles</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="/products.html" class="mr-4 hover:underline md:mr-6 ">Products</a>
+      </li>
+      <li>
+        <a href="/About.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+      </li>
+
+      <li>
+        <a href="/contact.html" class="hover:underline">Contact</a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+<script>
+  // Gets the Mobile Nav icon by its ID
+  let bars = document.getElementById('bars');
+
+  // Gets the Mobile Nav container
+  let mobileMenu = document.getElementById('mobileMenu');
+
+  // Displays the Mobile Nav when clicked and changes the Nav Icon from three bars to an 'X'
+  bars.addEventListener('click', function () {
+    mobileMenu.classList.toggle('show');
+    bars.classList.toggle('fa-times');
+  });
+
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>

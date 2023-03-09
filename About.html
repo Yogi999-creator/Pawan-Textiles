@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Pawan Textiles</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+  <style>
+    .show {
+      display: block;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(102, 102, 230);
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="sticky top-0 left-0 z-20 w-full">
+    <nav class=" p-4 bg-gray-800 text-gray-200  ">
+      <div class="flex justify-between items-center ">
+
+        <div class="flex items-center pl-8 pt-0">
+          <img src="/images/Logo/Pawan Textiles.ico" alt="Pawan Textiles">
+        </div>
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-4 right-8 pt-5  fixed">
+          <button aria-label="navigation" type="button"
+            class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+              class="fas fa-bars text-3xl" id="bars"></i> </button>
+        </div>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex ">
+          <ul class="hidden md:flex">
+            <li class="text-lg pr-8 "><a href="/"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Home</a></li>
+            <li class="text-lg pr-8"><a href="/products.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Products</a></li>
+            <li class="text-lg pr-8"><a href="/About.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">About us</a></li>
+            <li class="text-lg pr-8"><a href="/contact.html"
+                class="transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+                style="text-underline-offset: 8px;">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="hidden md:flex">
+          <a href="https://wa.me/919323658533" target="_blank"><i
+              class="fab fa-whatsapp text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a
+            href="mailto:pawantextiles.pm@gmail.com?cc=pawanmundhra.pm@gmail.com &bcc=yogeshmundhra.official@gmail.com&subject=Enquiry for New order!&body=Please share the Name / Phone number / cutting / design no. / quality info:  "><i
+              class="fa fa-envelope text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a href="tel:+91 9323658533"><i
+              class="fa fa-phone text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+          <a href="https://www.google.com/maps/place/Pawan+Textiles/@19.2750285,73.0421622,21z/data=!4m5!3m4!1s0x0:0x26276872de90c02b!8m2!3d19.2751796!4d73.0425798"
+            target="_blank"><i
+              class="fa fa-location-arrow text-2xl pr-8 transition duration-300 focus:text-yellow-500 hover:text-yellow-500"></i></a>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="hidden flex w-full mx-auto py-8 text-center">
+        <div class="flex flex-col justify-center items-center w-full">
+          <a href="/"
+            class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Home</a>
+          <a href="/products.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Products</a>
+          <a href="/About.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">About us</a>
+          <a href="/contact.html"
+            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500"
+            style="text-underline-offset: 8px;">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-indigo-600 text-indigo-200 md:text-center py-2 px-4 ">
+      For any business, Please Contact <a href="https://wa.me/919323658533"
+        class="font-bold underline hover:text-indigo-100">Pawan
+        Mundhra</a>.
+    </div>
+  </header>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-16 mx-auto">
+      <!-- Breadcrumbs -->
+      <div class="flex items-center space-x-2 text-gray-400 text-sm ">
+        <a href="/" class="hover:underline hover:text-gray-600">Home</a>
+        <span>
+          <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+        <span>About us</span>
+      </div>
+      <!-- ./ Breadcrumbs -->
+
+      <div class="text-center mb-20 pt-4">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Manufactures of:
+          Uniforms, Plain & Fancy Grey Fabrics.</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+          We "Pawan Textiles” are a Sole Proprietorship based firm, engaged as the foremost Manufacturer and Supplier of
+          all kind of Blue Stripes Fabric, Check Fabric, PV Fabric, Cotton Striped Fabric, Cotton Shirting
+          Fabric.Providing you the best range of uttar pradesh red check uniform fabric, school uniform check fabric,
+          tamil nadu school uniform fabric, lining school uniform fabric, tamil nadu school uniform check fabric and
+          fancy red check uniform fabric with effective & timely delivery.
+        </p>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 pt-10">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Optimum quality product profile & Timely Delivery</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Eco Friendly & Premium Shirting & Suiting Fabrics</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Made-To-Order Programming, any blends / weave, we can make it
+                all</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Experts in execution of Program based orders</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Premium Quality Yarn used</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Best quality material used for COTTON Fabrics,Polyester/Cotton
+                Blended Fabrics, Linen Blended Fabrics, etc</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Stringent quality measures</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Prompt Delivery of Consignment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <br><br><br><br>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  <footer
+    class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2011 <a href="https://flowbite.com/"
+        class="hover:underline">Pawan Textiles</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="/products.html" class="mr-4 hover:underline md:mr-6 ">Products</a>
+      </li>
+      <li>
+        <a href="/About.html" class="mr-4 hover:underline md:mr-6 ">About Us</a>
+      </li>
+      <li>
+        <a href="/contact.html" class="hover:underline">Contact</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+<script>
+  // Gets the Mobile Nav icon by its ID
+  let bars = document.getElementById('bars');
+
+  // Gets the Mobile Nav container
+  let mobileMenu = document.getElementById('mobileMenu');
+
+  // Displays the Mobile Nav when clicked and changes the Nav Icon from three bars to an 'X'
+  bars.addEventListener('click', function () {
+    mobileMenu.classList.toggle('show');
+    bars.classList.toggle('fa-times');
+  });
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>
